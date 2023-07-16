@@ -15,7 +15,7 @@ jobs:
           sudo apt-get install ffmpeg curl zip -y
           git remote set-url origin https://${{ github.actor }}:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
           git pull --rebase
-          curl -LJO https://github.com/yt-dlp/yt-dlp/releases/download/2023.03.04/yt-dlp_linux
+          curl -LJO https://github.com/yt-dlp/yt-dlp/releases/download/2023.07.06/yt-dlp_linux
           chmod +x ./yt-dlp_linux
           ./yt-dlp_linux --config-location dl.conf
           zip -s 1984m downloaded.zip downloads/*.mp4
